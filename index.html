@@ -2,59 +2,77 @@
 <html>
 <head>
     <title>Biodata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #000; /* Ubah warna latar belakang ke gelap */
-            color: #fff; /* Ubah warna teks ke putih */
+            background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
         }
+        
+        .utama {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
         .container {
             max-width: 600px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1); /* Warna latar belakang semi-transparan */
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Efek bayangan */
-            text-align: center; /* Mengatur teks menjadi tengah */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            margin: 20px;
         }
+
         .container2 {
             max-width: 500px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1); /* Warna latar belakang semi-transparan */
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Efek bayangan */
-            text-align: justify; /* Mengatur teks menjadi tengah */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            margin: 20px;
+            text-align: left;
         }
+
         h1 {
             color: #fff;
         }
+
         p {
             font-size: 18px;
             line-height: 1.6;
         }
+
         .info {
             font-weight: bold;
+        }
+
+        /* Media queries untuk layar dengan lebar kurang dari 600px */
+        @media (max-width: 600px) {
+            .container, .container2 {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="utama">
-    <div class="container">
-        <h1>Biodata Saya</h1>
-        <img src="https://media.licdn.com/dms/image/D4E03AQHEOT5deJWnWw/profile-displayphoto-shrink_400_400/0/1694798412595?e=1701907200&v=beta&t=hyiO5a_gbN4eIlUmScyWlKYC1T_8mFKNSNvQhdoTSN0" alt="Foto Saya" width="200">
-    </div>
-    <div class="container2">
-        <p class="info">Nama    : Muhamad Arifin Syam</p>
-        <p class="info">Usia    : 19 tahun</p>
-        <p class="info">Asal    : Serang, Banten, Indonesia</p>
-        <p class="info">Email   : marifinsyam73@gmal.com</p>
-        <p class="info">Instagram : @m_arifin_syam</p>
-    </div>
+        <div class="container">
+            <h1>Biodata Saya</h1>
+            <img src="https://media.licdn.com/dms/image/D4E03AQHEOT5deJWnWw/profile-displayphoto-shrink_400_400/0/1694798412595?e=1701907200&v=beta&t=hyiO5a_gbN4eIlUmScyWlKYC1T_8mFKNSNvQhdoTSN0" alt="Foto Saya" width="200">
+        </div>
+        <div class="container2">
+            <p class="info">Nama    : Muhamad Arifin Syam</p>
+            <p class="info">Usia    : 19 tahun</p>
+            <p class="info">Asal    : Serang, Banten, Indonesia</p>
+            <p class="info">Email   : marifinsyam73@gmal.com</p>
+            <p class="info">Instagram : @m_arifin_syam</p>
+        </div>
     </div>
 </body>
 </html>
